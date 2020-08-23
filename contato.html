@@ -34,21 +34,27 @@
   <section class="introducao-interna interna_contato">
     <div class="container">
       <h1 data-anime="400" class="fadeInDown">Contato</h1>
-      <p data-anime="800" class="fadeInDown">tire as suas dúvidas com a gente</p>
+      <p data-anime="800" class="fadeInDown">tire suas dúvidas com a gente</p>
     </div>
   </section>
 
   <section data-anime="1200" class="fadeInDown contato container">
-    <form class="grid-8 contato_form" id="form_orcamento" action="">
+    <form class="grid-8 contato_form formphp" id="form_orcamento" method="POST" action="/enviar.php">
       <label for="nome">Nome</label>
-      <input type="text" id="nome">
+      <input type="text" id="nome" name="nome" required>
       <label for="email">E-mail</label>
-      <input type="text" id="email">
+      <input type="email" id="email" name="email" required>
       <label for="telefone">Telefone</label>
-      <input type="text" id="telefone">
-      <label for="espec">Especificações</label>
-      <textarea id="espec"></textarea>
-      <button class="btn btn-preto" type="submit">Enviar</button>
+      <input type="text" id="telefone" name="telefone">
+
+      <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+      <input class="nao-aparece" type="text" name="leaveblank">
+      <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+      <input class="nao-aparece" type="text" name="dontchange" value="http://">
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" required></textarea>
+      <button id="enviar" name="enviar" class="btn btn-preto" type="submit">Enviar</button>
     </form>
 
     <div class="grid-8 contato_dados">
@@ -84,15 +90,15 @@
 
         <div class="grid-8 footer_historia">
           <h3>Nossa História</h3>
-          <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana. Interesse por todos os detalhes da vida cotidiana.</p>
+          <p>Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um sonho na garagem da nossa casa.</p>
         </div>
 
         <div class="grid-4 footer_contato">
           <h3>Contato</h3>
           <ul>
-            <li>- 21 9999 9999</li>
+            <li>- +55 21 9999-9999</li>
             <li>- contato@bikcraft.com</li>
-            <li>- Botafogo - RJ</li>
+            <li>- Rua Ali Perto - Botafogo</li>
           </ul>
         </div>
 
@@ -110,12 +116,13 @@
 
     <div class="copy">
       <div class="container">
-        <p class="grid-16">Bikcraft 2019 - Alguns direitos reservados</p>
+        <p class="grid-16">Bikcraft 2020 - Alguns direitos reservados</p>
       </div>
     </div>
   </footer>
 
   <script src="/js/simple-anime.js"></script>
+  <script src="/js/simple-form.js"></script>
   <script src="/js/script.js"></script>
 </body>
 
