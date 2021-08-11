@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Bikcraft" title="Bikcraft" src=".github/bikcraft.svg" width="220px" />
+    <img alt="Bikcraft" title="Bikcraft" src=".github/bikcraft-logo.svg" width="220px" />
 </h1>
 
 <p align="center">
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img alt="Bikcraft" src=".github/bikcraft.gif" width="100%">
+  <img alt="Bikcraft" src=".github/bikcraft.JPG" width="100%">
 </p>
 
 ## 💻 Project
